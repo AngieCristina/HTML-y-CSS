@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bootcamp Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title" class="text-center"> Codeable Survey Form </h1>
+  <p id="description" class="descripton text-center">
+    Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form" action="">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age(optional)</label>
+      <input type="number" name="number" id="number" min="18" max="100" maxlength=2 class="form-control"
+        placeholder="Age" required>
+    </div>
+    <div class="form-group">
+      <label id="option-label" for="dropdown">Which option best describes your current role?</label>
+      <select name="role" id="dropdown" class="form-control" required>
+        <option disabled selected value>Select current role </option>
+        <option value="student">Student</option>
+        <option value="job">Full time Job</option>
+        <option value="learner">Full time Learner</option>
+        <option value="preferNO"> Prefer not to say</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label id="recommend-label" for="dropdown">Would you recommend Codeable I to a friend?</label>
+      <label><input name="user_recommend" value="Definitely" type="radio" class="input-radio">Definitely</label>
+      <label><input name="user_recommend" value="Maybe" type="radio" class="input-radio">Maybe</label>
+      <label><input name="user_recommend" value="Not sure" type="radio" class="input-radio">Not sure</label>
+    </div>
+    <div class="form-group">
+      <p>What was your favorite feature of Codeable 1</p>
+      <select name="mostlike" id="most-like" class="form-control" required>
+        <option disabled selected value>Select an option </option>
+        <option value="student">New Friends</option>
+        <option value="job">Irene's classes</option>
+        <option value="learner">Full time Learner</option>
+        <option value="preferNO"> Prefer not to say</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p> What would do you think would be improved? </p>
+      <label><input name"prefer" value="Front-end Projects" type="checkbox" class="input-checkbox">Front-end
+        Projects</label>
+      <label><input name"prefer" value="Back-end Projects" type="checkbox" class="input-checkbox">Back-end
+        Projects</label>
+      <label><input name"prefer" value="Data Visualization" type="checkbox" class="input-checkbox">Data
+        Visualization</label>
+      <label><input name"prefer" value="Challenges" type="checkbox" class="input-checkbox">Challenges</label>
+      <label><input name"prefer" value="Open Source Community" type="checkbox" class="input-checkbox">Open Source
+        Community</label>
+      <label><input name"prefer" value="Gitter help rooms" type="checkbox" class="input-checkbox">Gitter help
+        rooms</label>
+      <label><input name"prefer" value="Videos" type="checkbox" class="input-checkbox">Videos</label>
+      <label><input name"prefer" value="City Meetups" type="checkbox" class="input-checkbox">City Meetups</label>
+      <label><input name"prefer" value="Fireside Chats" type="checkbox" class="input-checkbox">Fireside Chats</label>
+      <label><input name"prefer" value="Help from Able" type="checkbox" class="input-checkbox">More support from
+        Able</label>
+      <label><input name"prefer" value="Additional Courses" type="checkbox" class="input-checkbox">Additional
+        Courses</label>
+      <div class="form-group">
+        <p>Give me your strong comment or suggestion </p><textarea class="input-textarea" name="comment" id="comments"
+          placeholder="Enter your comment here..." cols="30" rows="10"></textarea>
+      </div>
+      <div class="form-group"><button type="submit" id="submit" class="submit-button">Submit</button></div>
+    </div>
+  </form>
+</body>
+
+</html>
