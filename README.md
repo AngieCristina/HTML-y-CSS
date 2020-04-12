@@ -1,4 +1,4 @@
 # freeCodeCamp
 A bunch of code to practice Web Development
 
-Every folder has a kind of responsive design projects, was develop thanks to freeCodeCamp
+Every folder was developed with the guideline of freeCodeCamp and has a bunch of responsive design code.
